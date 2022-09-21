@@ -20,8 +20,8 @@ public class FieldServiceTest {
         threadB.setName("thread-B");
 
         threadA.start();
-//        sleep(2000); //동기성 문제가 발생X
-        sleep(100); //동기성 문제가 발생O
+//        sleep(2000); //동시성 문제가 발생X
+        sleep(100); //동시성 문제가 발생O
         threadB.start();
 
         sleep(3000); //메인 쓰레드 종료 대기
